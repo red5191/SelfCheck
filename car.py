@@ -1,7 +1,7 @@
 vin_dict = {
-    '1234' : ('Skoda', 'Oktavia', 2013),
-    '2345' : ('Lada', 'Kalina', 2005),
-    '3456' : ('BMW', 'X5', 2019)
+    '1234': ('Skoda', 'Oktavia', 2013),
+    '2345': ('Lada', 'Kalina', 2005),
+    '3456': ('BMW', 'X5', 2019)
 }
 
 
@@ -16,7 +16,7 @@ class Car:
 
     @classmethod
     def from_vin(cls, vin):
-       return cls(vin_dict.get(vin)[0], vin_dict.get(vin)[1], vin_dict.get(vin)[2])
+        return cls(vin_dict.get(vin)[0], vin_dict.get(vin)[1], vin_dict.get(vin)[2])
 
     @staticmethod
     def is_valid_year(year):
@@ -24,6 +24,7 @@ class Car:
             print(f'{year} неподходящий год выпуска')
         else:
             print(f'{year} подходящий год выпуска')
+
 
 car1 = Car.from_vin('1234')
 car1.get_info()
