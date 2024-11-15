@@ -5,7 +5,6 @@ vin_dict = {
 }
 
 
-
 class Car:
     def __init__(self, make, model, year):
         vin = None
@@ -28,6 +27,4 @@ class Car:
             print(f'{year} подходящий год выпуска')
 
 car1 = Car.from_vin('1234')
-
 car1.get_info()
-car1.is_valid_year(996)
